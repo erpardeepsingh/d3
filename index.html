@@ -112,7 +112,7 @@
 					brewery_loc = data;
 					d3.csv("deaths_age_sex.csv", function (data) {
 						deaths = data;
-						d3.json("data/streets.json", function (data) {
+						d3.json("streets.json", function (data) {
 							streets = data;
 							drawMap(deaths);
 						});
